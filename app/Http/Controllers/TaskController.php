@@ -80,8 +80,9 @@ class TaskController extends Controller
      */
     public function destroy(Task $task)
     {
+        $this->authorize('delete', $task);
         $this->taskService->deleteTasks([$task->id]);
 
-        return redirect()->back();
+        return redirect()->route('project.show', $task->project);
     }
 }

@@ -33,8 +33,6 @@ class TaskService
 
     public function deleteTasks(array $ids)
     {
-        foreach ($ids as $id){
-            $this->taskRepository->deleteWhereIn(['id' => $id]);
-        }
+        $this->taskRepository->deleteWhereIn($ids);
     }
 }

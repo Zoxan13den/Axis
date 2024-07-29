@@ -123,3 +123,108 @@ h1, h2, h3, h4 {
 .task-item label {
     margin-top: 10px;
 }
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.add-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.project-list {
+    margin-top: 20px;
+}
+
+.project-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.btn-container {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: #333;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s;
+    min-width: 100px; /* Ensure buttons are the same width */
+}
+
+.btn-blue {
+    background: #007bff;
+}
+
+.btn-red {
+    background: #dc3545;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+.btn-blue:hover {
+    background: #0056b3;
+}
+
+.btn-red:hover {
+    background: #c82333;
+}
+
+form {
+    margin: 0;
+}
+

@@ -32,13 +32,13 @@
                                         <label for="tasks[0][priority]">Task Priority:</label>
                                         <select name="tasks[0][priority]">
                                             @foreach($task_priorities as $task_priority)
-                                                <option value="{{ $task_priority->value }}">{{ $task_priority->name }}</option>
+                                                <option value="{{ $task_priority->value }}">{{ ucfirst($task_priority->value) }}</option>
                                             @endforeach
                                         </select>
                                         <label for="tasks[0][status]">Task Status:</label>
                                         <select name="tasks[0][status]">
                                             @foreach($statuses as $status)
-                                                <option value="{{ $status->value }}">{{ $status->name }}</option>
+                                                <option value="{{ $status->value }}">{{ ucfirst($status->value) }}</option>
                                             @endforeach
                                         </select>
                                         <label for="tasks[0][deadline]">Task Deadline:</label>

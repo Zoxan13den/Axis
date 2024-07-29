@@ -31,13 +31,13 @@
                         <label for="tasks[{{ $index }}][priority]">Task Priority:</label>
                         <select name="tasks[{{ $index }}][priority]">
                             @foreach($task_priorities as $task_priority)
-                                <option value="{{ $task_priority->value }}" {{ $task->priority == $task_priority->value ? 'selected' : '' }}>{{ $task_priority->name }}</option>
+                                <option value="{{ $task_priority->value }}" {{ $task->priority == $task_priority->value ? 'selected' : '' }}>{{ ucfirst($task_priority->value) }}</option>
                             @endforeach
                         </select>
                         <label for="tasks[{{ $index }}][status]">Task Status:</label>
                         <select name="tasks[{{ $index }}][status]">
                             @foreach($statuses as $status)
-                                <option value="{{ $status->value }}" {{ $task->status == $status->value ? 'selected' : '' }}>{{ $status->name }}</option>
+                                <option value="{{ $status->value }}" {{ $task->status == $status->value ? 'selected' : '' }}>{{ ucfirst($status->value) }}</option>
                             @endforeach
                         </select>
                         <label for="tasks[{{ $index }}][deadline]">Task Deadline:</label>
@@ -55,13 +55,13 @@
                 <label for="tasks[0][priority]">Task Priority:</label>
                 <select name="tasks[0][priority]">
                     @foreach($task_priorities as $task_priority)
-                        <option value="{{ $task_priority->value }}">{{ $task_priority->name }}</option>
+                        <option value="{{ $task_priority->value }}">{{ ucfirst($task_priority->value) }}</option>
                     @endforeach
                 </select>
                 <label for="tasks[0][status]">Task Status:</label>
                 <select name="tasks[0][status]">
                     @foreach($statuses as $status)
-                        <option value="{{ $status->value }}">{{ $status->name }}</option>
+                        <option value="{{ $status->value }}">{{ ucfirst($status->value) }}</option>
                     @endforeach
                 </select>
                 <label for="tasks[0][deadline]">Task Deadline:</label>
