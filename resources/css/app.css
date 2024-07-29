@@ -1,0 +1,125 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    border-bottom: #007bff 3px solid;
+}
+header h1 {
+    margin: 0;
+    padding: 0 20px;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header ul {
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+header ul li {
+    display: inline;
+    padding: 0 20px;
+}
+.main {
+    padding: 20px;
+    background: #fff;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: #333;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s;
+    min-width: 100px; /* Ensure buttons are the same width */
+}
+.btn-blue {
+    background: #007bff;
+}
+.btn-red {
+    background: #dc3545;
+}
+.btn:hover {
+    background: #555;
+}
+.btn-blue:hover {
+    background: #0056b3;
+}
+.btn-red:hover {
+    background: #c82333;
+}
+.project-item, .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.project-link, .task-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    flex-grow: 1;
+    margin-right: 20px;
+}
+.btn-container {
+    display: flex;
+    gap: 10px;
+}
+form {
+    margin: 10px 0;
+}
+form label {
+    display: block;
+    margin: 5px 0;
+    font-weight: bold;
+}
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.add-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+h1, h2, h3, h4 {
+    color: #333;
+}
+.task-list, .project-list, .comment-list {
+    padding: 0;
+    list-style: none;
+}
+.task-item, .comment-item {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.task-item label {
+    margin-top: 10px;
+}
