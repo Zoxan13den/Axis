@@ -48,4 +48,14 @@ class ProjectRequest extends FormRequest
     {
         return new ProjectDto($this->validated());
     }
+
+    public function messages()
+    {
+        return [
+            'name.required' => 'Deadline is required',
+            'description.required' => 'Description is required',
+            'status.required' => 'Status is required',
+            'tasks.*.deadline' => 'Task deadline is required'
+        ];
+    }
 }

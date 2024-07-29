@@ -42,4 +42,15 @@ class TaskRequest extends FormRequest
     {
         return new TaskDto($this->validated());
     }
+
+    public function messages()
+    {
+        return [
+            'name.required' => 'Deadline is required',
+            'description.required' => 'Description is required',
+            'priority.required' => 'Priority is required',
+            'status.required' => 'Status is required',
+            'deadline.required' => 'Deadline is required'
+        ];
+    }
 }

@@ -26,7 +26,7 @@ return new class extends Migration
             $table->text('description');
             $table->enum('priority', [TaskPriorityEnum::LOW->value, TaskPriorityEnum::MEDIUM->value, TaskPriorityEnum::HIGH->value])
                 ->default(TaskPriorityEnum::MEDIUM->value);
-            $table->enum('status', [TaskStatusEnum::OPEN->value, TaskStatusEnum::IN_PROGRESS->value, TaskStatusEnum::FINISHED->value])
+            $table->enum('status', [TaskStatusEnum::OPEN->value, TaskStatusEnum::PROCESSING->value, TaskStatusEnum::FINISHED->value])
                 ->default(TaskStatusEnum::OPEN->value);
             $table->dateTime('deadline');
             $table->timestamps();
